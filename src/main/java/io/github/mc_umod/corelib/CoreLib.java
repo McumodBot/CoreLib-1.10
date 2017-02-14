@@ -18,8 +18,8 @@ public final class CoreLib {
 	
 	private CoreLibModContainer modcontainer;
 	
-	public static final String modid = "hycrafthd_corelib";
-	public static final String name = "HyCraftCore";
+	public static final String modid = "corelib";
+	public static final String name = "CoreLib";
 	public static final String mcversion = "1.10;1.10.2";
 	public static final String version = "1.0";
 	
