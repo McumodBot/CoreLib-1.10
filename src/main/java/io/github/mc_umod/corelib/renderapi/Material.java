@@ -15,7 +15,7 @@ public class Material {
 	
 	public final String ID;
 	private RGBA color;
-	private double width = 0,height = 0;
+	private double width = 0, height = 0;
 	private int glTextureId = -1;
 	private ResourceLocation texture;
 	
@@ -32,7 +32,7 @@ public class Material {
 	}
 	
 	public void setMap(String modid, String st) {
-		this.texture = new MapResource(modid,st);
+		this.texture = new MapResource(modid, st);
 	}
 	
 	public boolean hasTexture() {
