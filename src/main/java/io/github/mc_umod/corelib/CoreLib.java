@@ -34,7 +34,9 @@ public final class CoreLib {
 		if (!Arrays.asList(mcversion.split(";")).contains(ForgeVersion.mcVersion)) {
 			throw new WrongMinecraftVersionException(modcontainer, mcversion);
 		}
+		
 		config = Configuration.createConfiguration(new File(getMainDirectory(), "config/corelib/config.cfg"));
+		config.createFileIfNotExist();
 	}
 	
 	public static CoreLib getInstance() {
