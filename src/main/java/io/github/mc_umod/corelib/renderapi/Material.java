@@ -15,8 +15,6 @@ public class Material {
 	
 	public final String ID;
 	private RGBA color;
-	private double width = 0, height = 0;
-	private int glTextureId = -1;
 	private ResourceLocation texture;
 	
 	public Material(String name) {
