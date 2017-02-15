@@ -30,7 +30,7 @@ public class Material {
 	}
 	
 	public void setMap(String modid, String st) {
-		this.texture = new MapResource(modid,st);
+		this.texture = new MapResource(modid, st);
 	}
 	
 	public boolean hasTexture() {

@@ -44,12 +44,17 @@ public class CoreClientRegistry implements ClientRegistry {
 	
 	@Override
 	public void registerModel(Block block, int meta) {
-		registerModel(Item.getItemFromBlock(block), meta, new ModelResourceLocation(BlockUtil.getRegistryName(block), "inventory"));
+		registerModel(block, meta, new ModelResourceLocation(BlockUtil.getRegistryName(block), "inventory"));
 	}
 	
 	@Override
 	public void registerModel(Item item, int meta, ModelResourceLocation location) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, meta, location);
+	}
+	
+	@Override
+	public void registerModel(Block block, int meta, ModelResourceLocation location) {
+		registerModel(Item.getItemFromBlock(block), meta, location);
 	}
 	
 	@Override

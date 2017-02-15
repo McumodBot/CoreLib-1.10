@@ -27,6 +27,8 @@ public abstract interface ClientRegistry {
 	
 	public abstract void registerModel(Item item, int meta, ModelResourceLocation location);
 	
+	public abstract void registerModel(Block block, int meta, ModelResourceLocation location);
+	
 	public abstract void registerModelVariants(Item item, String... names);
 	
 	public abstract <T extends TileEntity> void registerSpecialTileEntityRenderer(Class<T> clazz, TileEntitySpecialRenderer<? super T> renderer);
