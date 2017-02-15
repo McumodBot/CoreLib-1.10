@@ -60,8 +60,9 @@ public class CoreClientRegistry implements ClientRegistry {
 	@Override
 	public void registerModelVariants(Item item, String... names) {
 		ResourceLocation[] res = new ResourceLocation[names.length];
+		String modid = item.getRegistryName().getResourceDomain();
 		for (int i = 0; i < names.length; i++) {
-			res[i] = new ResourceLocation(item.getRegistryName().getResourceDomain(),names[i]);
+			res[i] = new ResourceLocation(modid, names[i]);
 		}
 		ModelBakery.registerItemVariants(item, res);
 	}

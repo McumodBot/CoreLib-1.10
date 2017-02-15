@@ -12,6 +12,7 @@ import net.minecraft.item.*;
 import net.minecraft.stats.Achievement;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.*;
+import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.network.*;
 import net.minecraftforge.fml.common.registry.*;
 import net.minecraftforge.oredict.OreDictionary;
@@ -84,6 +85,11 @@ public class CoreCommonRegistry implements CommonRegistry {
 	}
 	
 	@Override
+	public void registerFuelHandler(IFuelHandler fueldhandler) {
+		GameRegistry.registerFuelHandler(fueldhandler);
+	}
+	
+	@Override
 	public void registerGuiHandler(Object mod, IGuiHandler handler) {
 		NetworkRegistry.INSTANCE.registerGuiHandler(mod, handler);
 	}
@@ -126,6 +132,16 @@ public class CoreCommonRegistry implements CommonRegistry {
 	@Override
 	public void registerTileEntity(Class<? extends TileEntity> clazz, String id) {
 		GameRegistry.registerTileEntity(clazz, id);
+	}
+	
+	@Override
+	public void registerWorldgenerator(IWorldGenerator generator) {
+		registerWorldgenerator(generator, 0);
+	}
+	
+	@Override
+	public void registerWorldgenerator(IWorldGenerator generator, int weight) {
+		GameRegistry.registerWorldGenerator(generator, weight);
 	}
 	
 }

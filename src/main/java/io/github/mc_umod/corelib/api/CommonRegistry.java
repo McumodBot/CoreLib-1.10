@@ -6,6 +6,7 @@ import net.minecraft.item.*;
 import net.minecraft.stats.Achievement;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.AchievementPage;
+import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.network.IGuiHandler;
 
 public abstract interface CommonRegistry {
@@ -24,6 +25,8 @@ public abstract interface CommonRegistry {
 	
 	public abstract void registerEventHandler(Object object);
 	
+	public abstract void registerFuelHandler(IFuelHandler fueldhandler);
+	
 	public abstract void registerGuiHandler(Object mod, IGuiHandler handler);
 	
 	public abstract void registerItem(Item item, String name);
@@ -41,5 +44,9 @@ public abstract interface CommonRegistry {
 	public abstract void registerSmelting(ItemStack input, ItemStack output, float xp);
 	
 	public abstract void registerTileEntity(Class<? extends TileEntity> clazz, String id);
+	
+	public abstract void registerWorldgenerator(IWorldGenerator generator);
+	
+	public abstract void registerWorldgenerator(IWorldGenerator generator, int weight);
 	
 }
