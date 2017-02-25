@@ -1,9 +1,9 @@
-package io.github.mc_umod.corelib.asm;
+package io.github.mc_umod.corelib.asm.transformer;
 
 import java.util.HashMap;
 
+import io.github.mc_umod.corelib.asm.*;
 import io.github.mc_umod.corelib.asm.visitor.LayerCapeVisitor;
-import io.github.mc_umod.corelib.util.asm.MinecraftClassVisitor;
 import net.minecraft.launchwrapper.IClassTransformer;
 
 public class CoreLibTransformer implements IClassTransformer {

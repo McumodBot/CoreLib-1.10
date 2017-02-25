@@ -3,13 +3,13 @@ package io.github.mc_umod.corelib.asm;
 import static org.objectweb.asm.ClassReader.EXPAND_FRAMES;
 import static org.objectweb.asm.ClassWriter.COMPUTE_FRAMES;
 
+import java.io.*;
 import java.util.*;
 
 import org.objectweb.asm.*;
 import org.objectweb.asm.tree.ClassNode;
 
 import io.github.mc_umod.corelib.CoreLib;
-import io.github.mc_umod.corelib.util.asm.MinecraftClassVisitor;
 
 public class VisitorHelper {
 	
@@ -35,6 +35,17 @@ public class VisitorHelper {
 			node.accept(writer);
 			
 			CoreLib.getLogger().info("Successfully patched class " + name);
+			
+			try {
+				FileOutputStream stream = new FileOutputStream(new File("TestClass.class"));
+				stream.write(writer.toByteArray());
+				stream.close();
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			
 			return writer.toByteArray();
 		}

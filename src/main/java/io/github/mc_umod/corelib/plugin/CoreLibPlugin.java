@@ -5,13 +5,13 @@ import java.util.Map;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin.*;
 
-@TransformerExclusions("io.github.mc_umod.corelib")
+@TransformerExclusions("io.github.mc_umod.corelib.asm.transformer")
 @Name(value = "CoreLibPlugin")
 public class CoreLibPlugin implements IFMLLoadingPlugin {
 	
 	@Override
 	public String[] getASMTransformerClass() {
-		return new String[] { "io.github.mc_umod.corelib.asm.CoreLibTransformer" };
+		return new String[] { "io.github.mc_umod.corelib.asm.transformer.CoreLibTransformer" };
 	}
 	
 	@Override
