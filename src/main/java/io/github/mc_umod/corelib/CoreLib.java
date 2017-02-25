@@ -1,6 +1,7 @@
 package io.github.mc_umod.corelib;
 
 import java.io.File;
+import java.util.Arrays;
 
 import org.apache.logging.log4j.*;
 
@@ -10,7 +11,6 @@ import net.hycrafthd.jsonconfiguration.Configuration;
 import net.minecraftforge.common.ForgeVersion;
 import net.minecraftforge.fml.common.WrongMinecraftVersionException;
 import net.minecraftforge.fml.relauncher.*;
-import scala.actors.threadpool.Arrays;
 
 public final class CoreLib {
 	
