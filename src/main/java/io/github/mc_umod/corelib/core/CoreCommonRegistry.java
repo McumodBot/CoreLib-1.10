@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 import com.google.common.collect.ObjectArrays;
 
-import io.github.mc_umod.corelib.api.CommonRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.*;

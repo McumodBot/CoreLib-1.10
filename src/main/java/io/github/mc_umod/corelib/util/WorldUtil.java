@@ -1,4 +1,4 @@
-package io.github.mc_umod.corelib.api.util;
+package io.github.mc_umod.corelib.util;
 
 import net.minecraft.block.BlockAir;
 import net.minecraft.client.Minecraft;

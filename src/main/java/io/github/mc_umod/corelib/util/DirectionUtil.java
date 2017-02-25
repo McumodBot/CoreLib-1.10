@@ -1,4 +1,4 @@
-package io.github.mc_umod.corelib.api.util;
+package io.github.mc_umod.corelib.util;
 
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;

@@ -2,7 +2,7 @@ package io.github.mc_umod.corelib.renderapi;
 
 import static org.lwjgl.opengl.GL11.*;
 
-import io.github.mc_umod.corelib.api.util.RGBA;
+import io.github.mc_umod.corelib.util.RGBA;
 import net.minecraft.util.math.Vec3d;
 
 /**

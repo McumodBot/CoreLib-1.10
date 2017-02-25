@@ -5,8 +5,8 @@ import java.io.*;
 import java.net.URISyntaxException;
 import java.util.*;
 
-import io.github.mc_umod.corelib.api.util.RGBA;
 import io.github.mc_umod.corelib.renderapi.*;
+import io.github.mc_umod.corelib.util.RGBA;
 import net.minecraft.util.ResourceLocation;
 
 /**

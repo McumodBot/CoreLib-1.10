@@ -1,6 +1,6 @@
 package io.github.mc_umod.corelib.renderapi;
 
-import io.github.mc_umod.corelib.api.util.RGBA;
+import io.github.mc_umod.corelib.util.RGBA;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ResourceLocation;
 

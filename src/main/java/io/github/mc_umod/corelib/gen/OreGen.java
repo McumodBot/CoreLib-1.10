@@ -1,4 +1,4 @@
-package io.github.mc_umod.corelib.api.gen;
+package io.github.mc_umod.corelib.gen;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;

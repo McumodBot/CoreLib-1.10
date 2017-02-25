@@ -1,8 +1,8 @@
-package io.github.mc_umod.corelib.api.util;
+package io.github.mc_umod.corelib.util;
 
 import java.util.Random;
 
-import io.github.mc_umod.corelib.api.gen.OreGen;
+import io.github.mc_umod.corelib.gen.OreGen;
 import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

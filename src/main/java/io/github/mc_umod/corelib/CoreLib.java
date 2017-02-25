@@ -4,7 +4,6 @@ import java.io.File;
 
 import org.apache.logging.log4j.*;
 
-import io.github.mc_umod.corelib.api.*;
 import io.github.mc_umod.corelib.core.*;
 import io.github.mc_umod.corelib.plugin.CoreLibModContainer;
 import net.hycrafthd.jsonconfiguration.Configuration;
@@ -22,7 +21,7 @@ public final class CoreLib {
 	public static final String mcversion = "1.10;1.10.2";
 	public static final String version = "1.0";
 	
-	private static final Logger logger = LogManager.getLogger(modid);
+	private static final Logger logger = LogManager.getLogger(name);
 	
 	private CoreLibModContainer modcontainer;
 	
@@ -37,6 +36,7 @@ public final class CoreLib {
 		
 		config = Configuration.createConfiguration(new File(getMainDirectory(), "config/corelib/config.cfg"));
 		config.createFileIfNotExist();
+		
 	}
 	
 	public static CoreLib getInstance() {

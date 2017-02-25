@@ -2,8 +2,8 @@ package io.github.mc_umod.corelib.obj;
 
 import java.util.ArrayList;
 
-import io.github.mc_umod.corelib.api.util.RGBA;
 import io.github.mc_umod.corelib.renderapi.*;
+import io.github.mc_umod.corelib.util.RGBA;
 import net.minecraft.util.math.Vec3d;
 
 /**

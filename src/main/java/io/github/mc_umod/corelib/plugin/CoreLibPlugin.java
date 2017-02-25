@@ -11,7 +11,7 @@ public class CoreLibPlugin implements IFMLLoadingPlugin {
 	
 	@Override
 	public String[] getASMTransformerClass() {
-		return null;
+		return new String[] { "io.github.mc_umod.corelib.asm.CoreLibTransformer" };
 	}
 	
 	@Override

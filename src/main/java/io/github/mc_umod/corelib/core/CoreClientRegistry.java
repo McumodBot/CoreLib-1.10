@@ -1,7 +1,6 @@
 package io.github.mc_umod.corelib.core;
 
-import io.github.mc_umod.corelib.api.ClientRegistry;
-import io.github.mc_umod.corelib.api.util.*;
+import io.github.mc_umod.corelib.util.*;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.*;

@@ -1,4 +1,4 @@
-package io.github.mc_umod.corelib.api.util;
+package io.github.mc_umod.corelib.util;
 
 import org.lwjgl.util.Color;
 

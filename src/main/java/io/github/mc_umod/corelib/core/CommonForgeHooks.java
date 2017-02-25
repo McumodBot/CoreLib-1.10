@@ -1,4 +1,4 @@
-package io.github.mc_umod.corelib.api;
+package io.github.mc_umod.corelib.core;
 
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.*;

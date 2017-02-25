@@ -1,4 +1,4 @@
-package io.github.mc_umod.corelib.api.process;
+package io.github.mc_umod.corelib.process;
 
 public interface IProcess {
 	

@@ -2,7 +2,7 @@ package io.github.mc_umod.corelib.renderapi;
 
 import java.awt.Color;
 
-import io.github.mc_umod.corelib.api.util.RGBA;
+import io.github.mc_umod.corelib.util.RGBA;
 
 /**
  * Material that is used when no Material is given
